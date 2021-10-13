@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <input type="email" id="EmailINput" value="Enter Your Email">
+        <input type="text" id="name">
+        <input type="url" value="Enter URL">
+        <input type="color" value="Select Color">
+        <input type="date">
+        <input type="time">
+        <label>Select Your destination</label>
+        <select id=" Place">
+                <option value="Ctr">ctr</option>
+                <option value="tirupathi">tirupathi</option>
+                <option value ="Chennai">Chennai</option>
+            </select>
+        <!--I want to Give 3 Cities as option to user out of which one will selcted
+            -->
+        <input type="submit" value="submit" onclick="Validate()">
+
+
+    </form>
+
+    <Script>
+        function Validate() {
+            var name1 = document.getElementById("name").value;
+            var re = /^[a-sdnv-Z\-]+$/;
+            if (re.test(name1)) {
+                alert("Your Values are with us...!")
+                return true;
+            } else {
+                alert("You are unable to match validation criteria")
+                return false;
+            }
+
+        }
+    </Script>
+
+</body>
+
+</html>
