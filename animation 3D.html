@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="Viewport" content="Width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>css</h1>
+        <div> ANIMATION</div>
+        <p>animation color of the shape</p>
+        <style>
+            div{
+                height: 120px;
+                width: 120px;
+                position: relative;
+                background-color: cadetblue;
+                animation-name:blue-Animation ;
+                animation-duration:4s;
+                 animation-delay: -2s;
+                animation-iteration-count: 3;
+                animation-direction:alternate-reverse;
+                animation-timing-function: linear;
+                                           
+               }
+              
+          @keyframes blue-Animation{
+               from{
+                    background-color: cadetblue;
+                }
+                to{background-color: plum};
+            
+            0%{
+                background-color: plum;
+                height: 100px;
+                left:0px; top:0px;
+            }
+            25%{
+                background-color: blueviolet;
+                width: 220px;
+                left:200px; top:0px;
+            }
+            50%{
+                background-color:green;
+                height: 100px;
+                left:0px; top:200px;
+            }
+            100%{
+                background-color: black;
+                width: 220px;
+                left:0px; top:0px;}
+           }
+           
+
+        </style>
+    </body>
+    </html>

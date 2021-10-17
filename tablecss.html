@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="Viewport" content="Width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+    <h1>Adding border to table</h1>
+    <table>
+        <tr>books collection
+            <th>name of books</th>
+            <th>write</th>
+        </tr>
+        <tr>
+            <td>secret</td>
+            <td>ronald</td>
+        </tr>
+        <tr>
+            <td>monk who sold his ferrari</th>
+            <td>writer</th>
+        </tr>
+        </table>
+        <style>
+            table{
+                padding: 15px;
+            }
+        
+            th{
+                border: 5px solid plum;
+                border-width: thin;
+                border-style: solid;
+                table-layout:auto;
+                width :500px;
+                padding: 20px;
+                background-color: teal;
+            }
+            tr:nth-child(even){
+                background-color: violet;
+            }
+            tr:hover{
+                background-color: purple;
+            }
+            tr{
+                padding:40px
+            }
+        </style>
+    </body>
+</html>
