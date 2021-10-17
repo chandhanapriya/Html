@@ -1,0 +1,37 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="Viewport" content="Width=device-width,initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <h1> Implementation of maps using set() in java</h1>
+        <p id="maps"></p>
+
+        <script>
+            //creating fruit collection as map
+            const fruits= new Map();
+            //adding values into fruitmap collection
+            fruits.set("apple",100);
+            fruits.set("Strawberry",90);
+            fruits.set("kiwi",80);
+            fruits.set("orange",70);
+            let text="";
+
+            //displaying collection
+            
+            fruits.forEach(function(value,key) {
+
+              text+= key+'='+value+"<br>"
+                
+            })
+            
+           document.getElementById("maps").innerHTML=fruits.get("orange");
+            document.getElementById("maps").innerHTML=text;
+        </script>
+    </body>
+    </html>  

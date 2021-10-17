@@ -1,0 +1,23 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="Viewport" content="Width=device-width,initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <button type="submit" onclick="goBack()" id= "click button">click here to go back</button>
+        <button type="submit" onclick="goBack2Pages()" id= "CB_Btn_2_pages">click here to go back2 pages</button>
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+            function goBack2Pages(){
+                window.history.go(-2);
+            }
+        </script>
+    </body>
+    </html>
